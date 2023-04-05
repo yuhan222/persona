@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>內容介紹</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#point1").click(function () {
+          $("#photo1").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point1").css("background-color", "rgb(19, 13, 104)");
+          $("#point2").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point2").click(function () {
+          $("#photo2").fadeIn();
+          $("#photo1").fadeOut();
+          $("#photo3").fadeOut();
+
+          $("#point2").css("background-color", "rgb(19, 13, 104)");
+          $("#point1").css("background-color", "white");
+          $("#point3").css("background-color", "white");
+        });
+
+        $("#point3").click(function () {
+          $("#photo3").fadeIn();
+          $("#photo2").fadeOut();
+          $("#photo1").fadeOut();
+
+          $("#point3").css("background-color", "rgb(19, 13, 104)");
+          $("#point2").css("background-color", "white");
+          $("#point1").css("background-color", "white");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="card">
+      <div id="photo">
+        <img src="photo-1.jpg" width="300" height="350" id="photo1" />
+        <img src="photo-2.jpg" width="300" height="350" id="photo2" />
+        <img src="photo-3.jpg" width="300" height="350" id="photo3" />
+        <div class="point" id="point1"></div>
+        <div class="point" id="point2"></div>
+        <div class="point" id="point3"></div>
+      </div>
+      <div id="intro">
+        <h1>伊隆·里夫·馬斯克</h1>
+        <h2>企業家</h2>
+        <h2>商業大亨</h2>
+        <h2>美國工程院院士</h2>
+        <h3>南非、加拿大、美國</h3>
+        <h4>「失敗很正常，如果沒有經歷失敗，表示你還不夠創新」</h4>
+      </div>
+      <div id="about">
+        <p id="information"><i class="fa-solid fa-circle-info"></i> 基本資料</p>
+        <p id="family">童年與家庭</p>
+        <p>
+          1971年生於南非，1980年馬斯克的父母婚後，他跟隨父親生活，但很快便後悔，並與父親疏遠。
+          作為一個內向的孩子，童年時的他經常受欺負，曾被一群男孩扔下樓梯並因此住院。
+        </p>
+        <p id="education">教育</p>
+        <p>
+          馬斯克於普勒托利亞大學學習了五個月，並藉此避開了南非的強制兵役。
+          1989年6月，馬斯克來到加拿大，在薩克其萬省生活了一年，並在農場和木材廠打零工。
+          1992年至賓夕法尼亞大學就讀，他於1995年畢業，並獲得了經濟學理學士和物理學文學士學位。
+        </p>
+        <p id="job"><i class="fa-solid fa-suitcase"></i> 工作經歷</p>
+        <ul>
+          <li>1995 網路軟體公司Zip2</li>
+          <li>1999 線上金融服務和電子郵件支付公司X.com(2001年改名為PayPal)</li>
+          <li>2002 私人太空發射公司SpaceX</li>
+          <li>2008 成為Tesla Roadster的第四任CEO</li>
+          <li>2008 家用光伏發電公司SolarCity</li>
+          <li>2013 超迴路列車Hyperloop</li>
+          <li>2015 非營利的人工智慧研究組織OpenAI</li>
+          <li>2016 神經科技和腦機介面公司Neuralink</li>
+          <li>2022 收購Twitter</li>
+        </ul>
+      </div>
+      <div id="other">
+        <p id="personality"><i class="fa-solid fa-user"></i> 個性</p>
+        <div class="block">
+          <div class="left-text">理性</div>
+          <div class="right-text">感性</div>
+          <div class="gray-bar"></div>
+          <div class="blue-bar" id="blue-bar1"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">跟隨力</div>
+          <div class="right-text">領導力</div>
+          <div class="gray-bar"></div>
+          <div class="blue-bar" id="blue-bar2"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">衝動</div>
+          <div class="right-text">理智</div>
+          <div class="gray-bar"></div>
+          <div class="blue-bar" id="blue-bar3"></div>
+        </div>
+        <div class="block">
+          <div class="left-text">直覺</div>
+          <div class="right-text">感覺</div>
+          <div class="gray-bar"></div>
+          <div class="blue-bar" id="blue-bar4"></div>
+        </div>
+        <p id="manner"><i class="fa-solid fa-heart"></i> 商業態度</p>
+        <p id="thing">
+          1.做自己熱愛的事情
+        </p>
+        <p id="one">
+          馬斯克認為自己是一名工程師，而非投資人。每天早上讓他起床的動力是對解決技術問題的渴望。
+        </p>
+        <p id="ready">2.凖備好承擔風險</p>
+        <p id="two">
+          要想做得好，就必須要有資產投入，金融危機爆發後，他並沒有害怕，他認為這不算什麼
+        </p>
+        <p id="forget">3.忽略評論家</p>
+        <p id="three">
+          他忽略了那些評論家的話，讓向前的路變得簡單了許多，因為他可以專心處理他認為真正重要的事情。
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
